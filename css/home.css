@@ -2,23 +2,24 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.body{
-  margin: 1rem;
+.body {
   display: grid;
   grid-template-areas: "header" "section" "footer";
-  grid-template-rows: 4rem 1fr 10rem;
+  grid-template-rows: 4rem 1fr 4rem;
+  gap: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
 }
 
 /* header section */
 .header {
-  background-color: darkslategrey;
+  background-color: #0892d0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   border: 1px groove;
 }
 
@@ -39,7 +40,7 @@
 }
 
 
-.header-name{
+.header-name {
   color: #ffffff;
   flex: 1;
   height: auto;
@@ -53,6 +54,25 @@
 .header-nav {
   flex: 2;
   display: inline-flex;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.dropdown .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 
 .nav-1 {
@@ -73,10 +93,8 @@
 .section {
   grid-area: section;
   display: grid;
-  grid-template-areas: "aboutMe" "skills" "projects" "contact";
-  grid-template-rows: 1fr 1fr 2fr 10rem;
-  margin-top: 3rem;
-  gap: 4rem;
+  grid-template-areas: "aboutMe" "skills" "projects";
+  grid-template-rows: 1fr 1fr 3fr;
 }
 
 
@@ -98,26 +116,29 @@
 
 .about-me-text h1 {
   padding-top: 1rem;
-  padding-left: 1rem;
   padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
 }
 
 .about-me-text p {
-  padding-left: 1rem;
+  padding: 1rem;
   padding-bottom: 0.8rem;
   text-align: justify;
+  color: #282C35
 }
 
 
 .about-me-img {
   grid-column: span 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me-img-1 {
- width: 80%;
- padding: 1rem;
- border-radius: 10%;
+  width: 80%;
+  padding-top: 1rem;
 }
 
 
@@ -125,21 +146,22 @@
 
 .my-skills {
   grid-area: skills;
+  margin-top: 4rem;
 }
 
 .my-skills h1 {
-  font-size: 1.5rem;
-  padding-left: 1rem;
+  font-size: 1.2rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .my-main-skills {
   grid-area: skills;
   display: inline-flex;
   flex-wrap: wrap;
-  background-color: darkslategray;
   justify-content: space-between;
   width: 100%;
+  background-color: #0892d0;
 }
 
 .my-main-skills div {
@@ -161,86 +183,96 @@
 
 .fa-js {
   color: #ffffff;
-  
+
 }
 
 .fa-react {
   color: #ffffff;
-  
+
 }
 
 .fa-git {
   color: #ffffff;
-  
+
 }
 
 .fa-chrome {
   color: #ffffff;
-  
+
 }
 
 .fa-terminal {
   color: #ffffff;
-  
+
 }
 
 .fa-terminal {
   color: #ffffff;
-  
+
 }
 
 .fa-npm {
   color: #ffffff;
-  
+
 }
 
 .fa-node {
   color: #ffffff;
-  
+
 }
 
 .fa-github {
   color: #ffffff;
-  
+
 }
 
 
 .flip {
-	backface-visibility: visible !important;
-	animation: flip 10s ease-in-out infinite;
+  backface-visibility: visible !important;
+  animation: flip 10s ease-in-out infinite;
 }
 
 
 @keyframes flip {
-	0% {
-		transform: perspective(400px) rotateY(0);
-		animation-timing-function: ease-out;
-	}
-	40% {
-		transform: perspective(400px) translateZ(150px) rotateY(170deg);
-		animation-timing-function: ease-out;
-	}
-	50% {
-		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-		animation-timing-function: ease-in;
-	}
-	80% {
-		transform: perspective(400px) rotateY(360deg) scale(.95);
-		animation-timing-function: ease-in;
-	}
-	100% {
-		transform: perspective(400px) scale(1);
-		animation-timing-function: ease-in;
-	}
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(.95);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
 }
 
 
 .elastic-spin {
   animation: elastic-spin 10s ease infinite;
 }
+
 @keyframes elastic-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(720deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(720deg);
+  }
 }
 
 .gelatine {
@@ -248,27 +280,48 @@
 }
 
 @keyframes gelatine {
-  from, to { transform: scale(1, 1); }
-  25% { transform: scale(0.9, 1.1); }
-  50% { transform: scale(1.1, 0.9); }
-  75% { transform: scale(0.95, 1.05); }
+
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 
 /* project section*/
 .my-projects {
   grid-area: projects;
+  margin-top: 2rem;
 }
 
 .my-projects h1 {
   padding-top: 1rem;
-  padding-left: 1rem;
   padding-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-detail {
   margin-bottom: 2rem;
-  width: 30rem;
+  width: 20rem;
+  padding-left: 1rem;
 }
 
 .project-summary {
@@ -276,18 +329,158 @@
 }
 
 .detail-img {
-  width: 25rem;
+  width: 20rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  border: 1px groove;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
+
+/* footer section*/
+.footer {
+  grid-area: footer;
+  background-color: #0892d0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-1 {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.copy-right {
+  color: #ffffff;
+}
+
+.fa-phone {
+  color: red;
+  animation: bounce 2s ease infinite alternate;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+
+  80% {
+    transform: translateY(-15%);
+  }
+
+  90% {
+    transform: translateY(0%);
+  }
+
+  95% {
+    transform: translateY(-7%);
+  }
+
+  97% {
+    transform: translateY(0%);
+  }
+
+  99% {
+    transform: translateY(-3%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fa-envelope {
+  color: red;
+  animation: grow 5s ease infinite alternate;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.fa-house {
+  color: red;
+  animation: grow 5s ease infinite alternate;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-twitter,
+.fa-instagram {
+  color: #ffffff;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.fa-house {
+  color: red;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.call-num {
+  padding-bottom: 1rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.call-us p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
 
 
 /* responsive design for media screen*/
 
-@media only screen and (max-width: 726px){
+@media only screen and (max-width: 726px) {
 
+  .body {
+    margin: 0;
+    grid-template-rows: 6rem 1fr 4rem;
+    border: none;
+  }
 
   /* header section*/
+
+  .dropdown {
+    display: flex;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
   .header-name h1 {
     font-size: 1rem;
   }
@@ -296,28 +489,34 @@
     font-size: 0.9rem;
   }
 
+
+  /*section*/
+  .section {
+    position: absolute;
+    top: 6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   /*about me section*/
 
   .about-me {
-    display: grid;
-    grid-template-areas: "about-me-text" "about-me-img";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column-reverse;
     width: 100%;
-    padding-right: 1rem;
   }
 
   .about-me-text {
     grid-area: about-me-text;
   }
-  
+
   .about-me-text h1 {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
   }
-  
+
   .about-me-text p {
     padding-left: 1rem;
     padding-bottom: 0.8rem;
@@ -325,17 +524,56 @@
     padding-right: 1rem;
     font-size: 0.9rem;
   }
-  
-  
+
+
   .about-me-img {
     grid-area: about-me-img;
-    text-align: left;
+    display: flex;
+    justify-content: left;
+
   }
-  
+
   .about-me-img-1 {
-   width: 40%;
-   padding: 1rem;
-   border-radius: 40%;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 40%;
   }
-  
+
+  /* skills section*/
+
+  .my-skills {
+    position: absolute;
+    top: 1rem;
+  }
+
+  /*project section*/
+
+  .my-projects {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-list {
+    justify-content: center;
+  }
+
+  /*footer section*/
+  .footer {
+    position: fixed;
+    bottom: 0;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    z-index: 1;
+    
+  }
+
 }

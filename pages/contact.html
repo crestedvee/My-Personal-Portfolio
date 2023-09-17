@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    My personal portfolio
+  </title>
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Archivo+Black&family=Edu+SA+Beginner:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,500;8..144,600;8..144,700;8..144,800&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="contact-body">
+    <header class="header">
+      <img src="/images/pic2.jpg" class="my-img">
+      <div class="header-name">
+        <h1>Ivan Anyobuofu Nwankwor</h1>
+      </div>
+      <div class="header-nav">
+        <a href="/pages/index.html#about-me" class="nav-1">About Me</a>
+        <a href="/pages/index.html#my-skills" class="nav-1">Skills</a>
+        <a href="/pages/index.html#my-projects" class="nav-1">Projects</a>
+      </div>
+    </header>
+    <section class="contact">
+      <div class="contact-form">
+        <h2>You can drop a message for me </h2>
+        <form>
+          <div>
+            <label for="username" class="user-label"> Name :</label>
+            <input type="text" class="username" id="username" required minlength="2" maxlength="30"><br/>
+          </div>
+          <div>
+            <label for="email" class="user-label">Email :</label>
+            <input type="text" class="username" id="email" required minlength="2" maxlength="30" pattern="[a-zA-Z]"><br/>
+          </div>
+          <div>
+            <label for="num" class="user-label">Phone number :</label>
+            <input type="number" class="username" id="num" required pattern="[0-9] {11,12}"><br/>
+          </div>
+          <div>
+            <label for="msg" class="user-label"> Message</label>
+            <textarea rows="5" class="username" id="msg"></textarea>
+          </div>
+          <div>
+            <label></label>
+            <input type="submit" value="SUBMIT" class="btn-submit">
+          </div>
+        </form>
+      </div>
+      <hr class="line" data-content="OR">
+      <div class="contact-div">
+        <div class="call-us">
+          <h2> Contact Me </h2>
+          <div class="icon-div">
+            <i class="fa fa-phone"></i>
+            <p class="call-num">
+              +447894545579
+            </p>
+          </div>
+        </div>
+        <div class="call-us">
+          <div class="icon-div">
+            <i class="fa fa-envelope"></i>
+            <p class="call-num">
+              veemanofu@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="call-us">
+          <div class="icon-div">
+            <i class="fa fa-house"></i>
+            <p class="call-num">
+              4 Lower Bethesda Street, ST1 3DE
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+
+</html>

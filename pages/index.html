@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Archivo+Black&family=Edu+SA+Beginner:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,500;8..144,600;8..144,700;8..144,800&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -19,11 +24,16 @@
       <div class="header-name">
         <h1>Ivan Anyobuofu Nwankwor</h1>
       </div>
+      <a class="dropdown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
       <div class="header-nav">
         <a href="#about-me" class="nav-1">About Me</a>
         <a href="#my-skills" class="nav-1">Skills</a>
         <a href="#my-projects" class="nav-1">Projects</a>
-        <a href="" class="nav-1">Contact</a>
+        <a href="/pages/contact.html" class="nav-1">Contact</a>
       </div>
     </header>
     <section class="section">
@@ -31,19 +41,19 @@
         <div class="about-me-text">
           <h1>About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic corrupti,
-            illo repellat quaerat quo iure consequuntur ipsum est quas fugiat odit
-            velit impedit tempore, suscipit consequatur praesentium provident fugit.
+            I am a computer scientist with certifications and experience in web development,
+            mobile and desktop application development. I have built business solutions for
+            schools and private businesses.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic corrupti,
-            illo repellat quaerat quo iure consequuntur ipsum est quas fugiat odit
-            velit impedit tempore, suscipit consequatur praesentium provident fugit.
+            I also have experience in computer networking as I have worked as a cisco instructor on
+            computer networking, routing and switching, computer hardware and Pc support, for an
+            apex training instiute (Industrial Training Fund) in Nigeria.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic corrupti,
-            illo repellat quaerat quo iure consequuntur ipsum est quas fugiat odit
-            velit impedit tempore, suscipit consequatur praesentium provident fugit.
+            In my spare time, I love to listen to music, swim and discuss with like minds about creating
+            solutions to problems. Traveling is something I love doing as well, because I like to experience
+            different cultures and see how I can be impactful positively.
           </p>
         </div>
         <div class="about-me-img">
@@ -103,31 +113,63 @@
       </div>
       <div class="my-projects" id="my-projects">
         <h1> My Projects</h1>
-        <details class="project-detail">
-          <summary class="project-summary">
-            Let's Trek Africa (LTA)
-            <img src="/images/pic5.png" alt="picture of let's trek Africa site" class="detail-img">
-          </summary>
-          <p> This is a tourism site for hikers who wish to explore
-            the beauty of nature in some carefully selected regions of Africa.<br />
-            <a href="#"> View more details</a>
-          </p>
-        </details>
-        <details class="project-detail">
-          <summary class="project-summary">
-            Klever Car Repairs
-          </summary>
-          <img src="/images/pic4.png" alt="picture of let's trek Africa site" class="detail-img">
-          <p> This is a tourism site for hikers who wish to explore
-            the beauty of nature in some carefully selected regions of Africa.<br />
-            <a href="#"> View more details</a>
-          </p>
-        </details>
+        <div class="project-list">
+          <details class="project-detail">
+            <summary class="project-summary">
+              Let's Trek Africa (LTA)
+              <img src="/images/pic5.png" alt="picture of let's trek Africa site" class="detail-img">
+              <p> This is a tourism site for hikers who wish to explore
+                the beauty of nature in some carefully selected regions of Africa.
+              </p>
+            </summary>
+            <a href="#"> View Site</a>
+          </details>
+          <details class="project-detail">
+            <summary class="project-summary">
+              Klever Car Repairs
+              <img src="/images/pic4.png" alt="picture of let's trek Africa site" class="detail-img">
+              <p> This is a tourism site for hikers who wish to explore
+                the beauty of nature in some carefully selected regions of Africa.</p>
+              </p>
+            </summary>
+            <a href="#"> View Site</a>
+          </details>
+          <details class="project-detail">
+            <summary class="project-summary">
+              Tea Cozy
+              <img src="/images/pic7.png" alt="picture of let's trek Africa site" class="detail-img">
+              <p> This is a tourism site for hikers who wish to explore
+                the beauty of nature in some carefully selected regions of Africa.</p>
+            </summary>
+            <a href="#"> View Site</a>
+          </details>
+          <details class="project-detail">
+            <summary class="project-summary">
+              DJ Otiks
+              <img src="/images/pic8.png" alt="picture of let's trek Africa site" class="detail-img">
+              <p> This is a tourism site for hikers who wish to explore
+                the beauty of nature in some carefully selected regions of Africa.</p>
+            </summary>
+            <a href="#"> View Site</a>
+          </details>
+        </div>
       </div>
     </section>
-    <foote class="footer">
-
-      </footer>
+    <footer class="footer">
+      <div class="footer-1">
+        <div>
+          <p class="copy-right">
+            copyright &copy; 2023.
+          </p>
+        </div>
+        <div>
+          <a href="" class="fa-brands fa-facebook"></a>
+          <a href="" class="fa-brands fa-twitter"></a>
+          <a href="" class="fa-brands fa-instagram"></a>
+          <a href="" class="fa-brands fa-linkedin"></a> 
+        </div> 
+      </div>      
+    </footer>
   </div>
 </body>
 
