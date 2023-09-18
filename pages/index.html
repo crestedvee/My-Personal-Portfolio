@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="body">
+  <div class="body" id="main-body">
     <header class="header">
       <img src="/images/pic2.jpg" class="my-img">
       <div class="header-name">
@@ -34,23 +34,24 @@
         <a href="#my-skills" class="nav-1">Skills</a>
         <a href="#my-projects" class="nav-1">Projects</a>
         <a href="/pages/contact.html" class="nav-1">Contact</a>
+        <button class="toggle-mode" id="toggle-button">Dark Mode</button>
       </div>
     </header>
     <section class="section">
       <div class="about-me" id="about-me">
         <div class="about-me-text">
           <h1>About Me</h1>
-          <p>
+          <p id="aboutMeTxt">
             I am a computer scientist with certifications and experience in web development,
             mobile and desktop application development. I have built business solutions for
             schools and private businesses.
           </p>
-          <p>
+          <p id="aboutMeTxt2">
             I also have experience in computer networking as I have worked as a cisco instructor on
             computer networking, routing and switching, computer hardware and Pc support, for an
             apex training instiute (Industrial Training Fund) in Nigeria.
           </p>
-          <p>
+          <p id="aboutMeTxt3">
             In my spare time, I love to listen to music, swim and discuss with like minds about creating
             solutions to problems. Traveling is something I love doing as well, because I like to experience
             different cultures and see how I can be impactful positively.
@@ -115,7 +116,7 @@
         <h1> My Projects</h1>
         <div class="project-list">
           <details class="project-detail">
-            <summary class="project-summary">
+            <summary class="project-summary" id="p1">
               Let's Trek Africa (LTA)
               <img src="/images/pic5.png" alt="picture of let's trek Africa site" class="detail-img">
               <p> This is a tourism site for hikers who wish to explore
@@ -125,7 +126,7 @@
             <a href="#"> View Site</a>
           </details>
           <details class="project-detail">
-            <summary class="project-summary">
+            <summary class="project-summary" id="p2">
               Klever Car Repairs
               <img src="/images/pic4.png" alt="picture of let's trek Africa site" class="detail-img">
               <p> This is a tourism site for hikers who wish to explore
@@ -135,7 +136,7 @@
             <a href="#"> View Site</a>
           </details>
           <details class="project-detail">
-            <summary class="project-summary">
+            <summary class="project-summary" id="p3">
               Tea Cozy
               <img src="/images/pic7.png" alt="picture of let's trek Africa site" class="detail-img">
               <p> This is a tourism site for hikers who wish to explore
@@ -144,7 +145,7 @@
             <a href="#"> View Site</a>
           </details>
           <details class="project-detail">
-            <summary class="project-summary">
+            <summary class="project-summary" id="p4">
               DJ Otiks
               <img src="/images/pic8.png" alt="picture of let's trek Africa site" class="detail-img">
               <p> This is a tourism site for hikers who wish to explore
@@ -171,6 +172,9 @@
       </div>      
     </footer>
   </div>
+  <script src="/js/home.js">
+
+  </script>
 </body>
 
 </html>

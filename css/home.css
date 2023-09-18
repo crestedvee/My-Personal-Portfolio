@@ -16,6 +16,7 @@
 
 /* header section */
 .header {
+  grid-area: header;
   background-color: #0892d0;
   display: inline-flex;
   justify-content: center;
@@ -27,6 +28,20 @@
   width: 2rem;
   border-radius: 30%;
   animation: grow 10s ease alternate;
+}
+
+.toggle-mode {
+  margin-right: 1rem;
+  border-radius: 1rem;
+  width: 6rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.toggle-mode:hover {
+  background-color: white;
+  color: black;
+
 }
 
 @keyframes grow {
@@ -125,7 +140,7 @@
   padding: 1rem;
   padding-bottom: 0.8rem;
   text-align: justify;
-  color: #282C35
+  color: #282C35;
 }
 
 
@@ -320,12 +335,16 @@
 
 .project-detail {
   margin-bottom: 2rem;
-  width: 20rem;
+  width: 22rem;
   padding-left: 1rem;
+  border: 1px groove;
+  /* background-color: #0892d0;*/
+  background-color: #add8e6;
 }
 
 .project-summary {
-  color: darkslategray;
+  color: #282C35;
+  padding: 0.5rem;
 }
 
 .detail-img {
@@ -458,7 +477,7 @@
 
   .body {
     margin: 0;
-    grid-template-rows: 6rem 1fr 4rem;
+    grid-template-rows: 7rem 1fr 4rem;
     border: none;
   }
 
@@ -466,6 +485,10 @@
 
   .dropdown {
     display: flex;
+  }
+
+  .my-img {
+    border-radius: 50%;
   }
 
   .header-nav {
@@ -546,6 +569,10 @@
     top: 1rem;
   }
 
+  .my-skills h1 {
+    text-align: center;
+  }
+
   /*project section*/
 
   .my-projects {
@@ -555,6 +582,14 @@
     top: 1rem;
     width: 100%;
     justify-content: center;
+  }
+
+  .my-projects h1 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    text-align: center;
   }
 
   .project-list {
@@ -567,13 +602,11 @@
     bottom: 0;
     display: inline-flex;
     width: 100%;
-    margin-bottom: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding-bottom: 1rem;
     justify-content: space-between;
     z-index: 1;
-    
   }
 
 }
