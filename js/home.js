@@ -8,6 +8,9 @@ let pSum2 = document.getElementById("p2");
 let pSum3 = document.getElementById("p3");
 let pSum4 = document.getElementById("p4");
 let pdetail = document.getElementsByClassName("project-detail");
+let mobileMenu = document.getElementsByClassName("dropdown")[0];
+let headerView = document.getElementsByClassName("header-nav")[0];
+let contactF = document.getElementsByClassName('contact');
 
 
 
@@ -34,4 +37,10 @@ let changeMode = () => {
   }
 }
 
+
+const changeView = () => {
+  headerView.classList.toggle('active');
+}
+
 tBtn.addEventListener("click", changeMode);
+mobileMenu.addEventListener("click", changeView);

@@ -8,11 +8,9 @@ let lab2 = document.getElementById("l2");
 let lab3 = document.getElementById("l3");
 let lab4 = document.getElementById("l4");
 let hr1 = document.getElementById("line");
-let mobileMenu = document.getElementById("dropdown");
-let headerView = document.getElementById("header-nav");
-let barBtn = document.getElementById("bar");
-let barBtn2 = document.getElementById("bar2");
-let barBtn3 = document.getElementById("bar3");
+let mobileMenu = document.getElementsByClassName("dropdown")[0];
+let headerView = document.getElementsByClassName("header-nav")[0];
+let contactF = document.getElementsByClassName('contact');
 
 
 let changeMode = () => {
@@ -51,12 +49,8 @@ function changeVieMobileView(){
 }
 
 const changeView = () => {
-  document.getElementById("header-nav").classList.add("classHeader-nav");
+  headerView.classList.toggle('active');
 }
 
 tBtn.addEventListener("click", changeMode);
 mobileMenu.addEventListener("click", changeView);
-barBtn.addEventListener("click", changeView);
-barBtn2.addEventListener("click", changeView);
-barBtn3.addEventListener("click", changeView);
-mobileMenu.onmouseenter = changeVieMobileView;

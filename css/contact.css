@@ -421,7 +421,12 @@
   font-size: 0.9rem;
 }
 
-
+.classHeader-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
 
 
 
@@ -436,6 +441,7 @@
 
   .body {
     margin: 0;
+    position: relative;
     grid-template-rows: 1fr 1fr 4rem;
     border: none;
   }
@@ -454,20 +460,23 @@
 
   .my-img {
     border-radius: 50%;
+    width: 3rem;
   }
 
   .header-nav {
     display: none;
   }
 
-  .classHeader-nav {
+  .header-nav.active {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
   }
 
+
   .header-nav a {
+    display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -481,11 +490,12 @@
   .header {
     position: absolute;
     top: 0;
-    left: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    left: 0;
   }
+
   .header-name h1 {
     font-size: 1rem;
   }
@@ -498,7 +508,7 @@
 
   .contact {
     position: absolute;
-    top: 20rem;
+    top: 16rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -522,12 +532,10 @@
 
 
   .footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 70rem;
     display: inline-flex;
-    width: 100%;
-    padding-bottom: 1rem;
-    justify-content: space-between;
+    width: 98%;
     z-index: 1;
     left: 0;
     right: 0;
