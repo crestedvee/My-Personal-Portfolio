@@ -19,9 +19,9 @@
 
 <body>
   <div class="body" id="main-body">
-    <header class="header">
+    <header class="header" id="header">
       <img src="/images/pic2.jpg" class="my-img">
-      <div class="header-name">
+      <div class="header-name" id="header-name">
         <h1>Ivan Anyobuofu Nwankwor</h1>
       </div>
       <a class="dropdown">
@@ -29,18 +29,21 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
-      <div class="header-nav">
-        <a href="#about-me" class="nav-1">About Me</a>
-        <a href="#my-skills" class="nav-1">Skills</a>
-        <a href="#my-projects" class="nav-1">Projects</a>
-        <a href="/pages/contact.html" class="nav-1">Contact</a>
-        <button class="toggle-mode" id="toggle-button">Dark Mode</button>
+      <div class="header-nav" id="header-nav">
+        <a href="/pages/index.html#about-me" class="nav-1" id="nav1">About Me</a>
+        <a href="/pages/index.html#my-skills" class="nav-1" id="nav2">Skills</a>
+        <a href="/pages/index.html#my-projects" class="nav-1" id="nav3">Projects</a>
+        <a href="/pages/contact.html" class="nav-1" id="nav4">Contact</a>
+        <select class="toggle-mode" id="toggle-button2">
+          <option value="light">Light Mode</option>>
+          <option value="dark">Dark Mode</option>>
+        </select>
       </div>
     </header>
-    <section class="section">
+    <section class="section" id="section">
       <div class="about-me" id="about-me">
         <div class="about-me-text">
-          <h1>About Me</h1>
+          <h1 id="sub-header">About Me</h1>
           <p id="aboutMeTxt">
             I am a computer scientist with certifications and experience in web development,
             mobile and desktop application development. I have built business solutions for
@@ -57,13 +60,13 @@
             different cultures and see how I can be impactful positively.
           </p>
         </div>
-        <div class="about-me-img">
+        <div class="about-me-img" id="about-me-img">
           <img src="/images/pic1.jpg" class="about-me-img-1">
         </div>
       </div>
       <div class="my-skills" id="my-skills">
-        <h1>My Skills</h1>
-        <div class="my-main-skills">
+        <h1 id="sub-header2">My Skills</h1>
+        <div class="my-main-skills" id="my-main-skills">
           <div>
             <i class="fa-brands fa-html5 fa-2x flip"></i>
             <p>html5</p>
@@ -113,9 +116,9 @@
         </div>
       </div>
       <div class="my-projects" id="my-projects">
-        <h1> My Projects</h1>
-        <div class="project-list">
-          <details class="project-detail">
+        <h1 id="sub-header3"> My Projects</h1>
+        <div class="project-list" id="project-list">
+          <details class="project-detail" id="project-detail1">
             <summary class="project-summary" id="p1">
               Let's Trek Africa (LTA)
               <img src="/images/pic5.png" alt="picture of let's trek Africa site" class="detail-img">
@@ -125,7 +128,7 @@
             </summary>
             <a href="#"> View Site</a>
           </details>
-          <details class="project-detail">
+          <details class="project-detail" id="project-detail2">
             <summary class="project-summary" id="p2">
               Klever Car Repairs
               <img src="/images/pic4.png" alt="picture of let's trek Africa site" class="detail-img">
@@ -135,7 +138,7 @@
             </summary>
             <a href="#"> View Site</a>
           </details>
-          <details class="project-detail">
+          <details class="project-detail" id="project-detail3">
             <summary class="project-summary" id="p3">
               Tea Cozy
               <img src="/images/pic7.png" alt="picture of let's trek Africa site" class="detail-img">
@@ -144,11 +147,11 @@
             </summary>
             <a href="#"> View Site</a>
           </details>
-          <details class="project-detail">
+          <details class="project-detail" id="project-detail4">
             <summary class="project-summary" id="p4">
               DJ Otiks
               <img src="/images/pic8.png" alt="picture of let's trek Africa site" class="detail-img">
-              <p> This is a tourism site for hikers who wish to explore
+              <p id="sP4"> This is a tourism site for hikers who wish to explore
                 the beauty of nature in some carefully selected regions of Africa.</p>
             </summary>
             <a href="#"> View Site</a>
@@ -156,10 +159,10 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer-1">
         <div>
-          <p class="copy-right">
+          <p class="copy-right" id="copy-right">
             copyright &copy; 2023.
           </p>
         </div>

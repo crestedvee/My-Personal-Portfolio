@@ -9,17 +9,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Archivo+Black&family=Edu+SA+Beginner:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,500;8..144,600;8..144,700;8..144,800&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Archivo+Black&family=Edu+SA+Beginner:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,500;8..144,600;8..144,700;8..144,800&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div class="contact-body">
-    <header class="header">
+    <header class="header" id="header">
       <img src="/images/pic2.jpg" class="my-img">
-      <div class="header-name">
+      <div class="header-name" id="header-name">
         <h1>Ivan Anyobuofu Nwankwor</h1>
       </div>
       <a class="dropdown" class="dropdown">
@@ -28,27 +30,31 @@
         <span class="bar" id="bar3"></span>
       </a>
       <div class="header-nav" id="header-nav">
-        <a href="/pages/index.html#about-me" class="nav-1">About Me</a>
-        <a href="/pages/index.html#my-skills" class="nav-1">Skills</a>
-        <a href="/pages/index.html#my-projects" class="nav-1">Projects</a>
-        <button class="toggle-mode" id="toggle-button">Dark Mode</button>
+        <a href="/pages/index.html#about-me" class="nav-1" id="nav1">About Me</a>
+        <a href="/pages/index.html#my-skills" class="nav-1" id="nav2">Skills</a>
+        <a href="/pages/index.html#my-projects" class="nav-1" id="nav3">Projects</a>
+        <select class="toggle-mode" id="toggle-button2">
+          <option value="light">Light Mode</option>>
+          <option value="dark">Dark Mode</option>>
+        </select>
       </div>
     </header>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 id="h2-contact">You can drop a message for me </h2>
       <div class="contact-form">
         <form class="main-form" id="main-form">
           <div>
             <label for="username" class="user-label" id="l1"> Name :</label>
-            <input type="text" class="username" id="username" required minlength="2" maxlength="30"><br/>
+            <input type="text" class="username" id="username" required minlength="2" maxlength="30"><br />
           </div>
           <div>
             <label for="email" class="user-label" id="l2">Email :</label>
-            <input type="text" class="username" id="email" required minlength="2" maxlength="30" pattern="[a-zA-Z]"><br/>
+            <input type="text" class="username" id="email" required minlength="2" maxlength="30"
+              pattern="[a-zA-Z]"><br />
           </div>
           <div>
             <label for="num" class="user-label" id="l3">Phone number :</label>
-            <input type="number" class="username" id="num" required pattern="[0-9] {11,12}"><br/>
+            <input type="number" class="username" id="num" required pattern="[0-9] {11,12}"><br />
           </div>
           <div>
             <label for="msg" class="user-label" id="l4"> Message</label>
@@ -61,11 +67,11 @@
         </form>
       </div>
       <hr class="line" data-content="OR" id="line">
-      <div class="contact-div">
+      <div class="contact-div" id="contact-div">
         <div class="call-us">
           <div class="icon-div">
             <i class="fa fa-phone"></i>
-            <p class="call-num">
+            <p class="call-num" id="fnum">
               +447894545579
             </p>
           </div>
@@ -73,7 +79,7 @@
         <div class="call-us">
           <div class="icon-div">
             <i class="fa fa-envelope"></i>
-            <p class="call-num">
+            <p class="call-num" id="fmail">
               veemanofu@gmail.com
             </p>
           </div>
@@ -81,17 +87,17 @@
         <div class="call-us">
           <div class="icon-div">
             <i class="fa fa-house"></i>
-            <p class="call-num">
+            <p class="call-num"id=fadd>
               4 Lower Bethesda Street, ST1 3DE
             </p>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer-1">
         <div>
-          <p class="copy-right">
+          <p class="copy-right" id="copy-right">
             copyright &copy; 2023.
           </p>
         </div>
@@ -99,12 +105,12 @@
           <a href="" class="fa-brands fa-facebook"></a>
           <a href="" class="fa-brands fa-twitter"></a>
           <a href="" class="fa-brands fa-instagram"></a>
-          <a href="" class="fa-brands fa-linkedin"></a> 
-        </div> 
-      </div>      
+          <a href="" class="fa-brands fa-linkedin"></a>
+        </div>
+      </div>
     </footer>
     <script src="/js/contact.js">
-
+      window.onload = newToggle();
     </script>
 </body>
 
